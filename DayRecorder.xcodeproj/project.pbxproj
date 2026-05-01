@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A001 /* DayRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001 /* DayRecorderApp.swift */; };
+		A002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002 /* AppDelegate.swift */; };
+		A003 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003 /* Recording.swift */; };
+		A004 /* RecordingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004 /* RecordingState.swift */; };
+		A005 /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005 /* RecordingManager.swift */; };
+		A006 /* MicrophoneCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F006 /* MicrophoneCaptureService.swift */; };
+		A007 /* SystemAudioCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007 /* SystemAudioCaptureService.swift */; };
+		A008 /* AudioMixerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008 /* AudioMixerService.swift */; };
+		A009 /* RecordingLibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F009 /* RecordingLibraryStore.swift */; };
+		A010 /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010 /* PermissionsManager.swift */; };
+		A011 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011 /* SettingsStore.swift */; };
+		A012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012 /* ContentView.swift */; };
+		A013 /* RecordingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013 /* RecordingListView.swift */; };
+		A014 /* RecordingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F014 /* RecordingDetailView.swift */; };
+		A015 /* RecordingControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015 /* RecordingControlsView.swift */; };
+		A016 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F016 /* PermissionsView.swift */; };
+		A017 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017 /* SettingsView.swift */; };
+		A018 /* FileNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = F018 /* FileNaming.swift */; };
+		A019 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F019 /* Logger.swift */; };
+		A020 /* DayRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F020 /* DayRecorderTests.swift */; };
+		A021 /* ScreenCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F021 /* ScreenCaptureKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A022 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F022 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F001 /* DayRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRecorderApp.swift; sourceTree = "<group>"; };
+		F002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F003 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		F004 /* RecordingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingState.swift; sourceTree = "<group>"; };
+		F005 /* RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingManager.swift; sourceTree = "<group>"; };
+		F006 /* MicrophoneCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneCaptureService.swift; sourceTree = "<group>"; };
+		F007 /* SystemAudioCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAudioCaptureService.swift; sourceTree = "<group>"; };
+		F008 /* AudioMixerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMixerService.swift; sourceTree = "<group>"; };
+		F009 /* RecordingLibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingLibraryStore.swift; sourceTree = "<group>"; };
+		F010 /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		F011 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		F012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F013 /* RecordingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingListView.swift; sourceTree = "<group>"; };
+		F014 /* RecordingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDetailView.swift; sourceTree = "<group>"; };
+		F015 /* RecordingControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingControlsView.swift; sourceTree = "<group>"; };
+		F016 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		F017 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F018 /* FileNaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNaming.swift; sourceTree = "<group>"; };
+		F019 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F020 /* DayRecorderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRecorderTests.swift; sourceTree = "<group>"; };
+		F021 /* ScreenCaptureKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenCaptureKit.framework; path = System/Library/Frameworks/ScreenCaptureKit.framework; sourceTree = SDKROOT; };
+		F022 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FAPP /* DayRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FTST /* DayRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FENT /* DayRecorder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DayRecorder.entitlements; sourceTree = "<group>"; };
+		FPLIST /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BPFR /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A021 /* ScreenCaptureKit.framework in Frameworks */,
+				A022 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BPFT /* Frameworks (Tests) */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		GROOT /* / */ = {
+			isa = PBXGroup;
+			children = (
+				GAPP /* DayRecorder */,
+				GTST /* DayRecorderTests */,
+				GFWK /* Frameworks */,
+				GPRD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GPRD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAPP /* DayRecorder.app */,
+				FTST /* DayRecorderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		GFWK /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F021 /* ScreenCaptureKit.framework */,
+				F022 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		GAPP /* DayRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				GAPPGRP /* App */,
+				GMOD /* Models */,
+				GSVC /* Services */,
+				GVIW /* Views */,
+				GUTL /* Utilities */,
+				GRES /* Resources */,
+				FENT /* DayRecorder.entitlements */,
+			);
+			path = DayRecorder;
+			sourceTree = "<group>";
+		};
+		GAPPGRP /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F001 /* DayRecorderApp.swift */,
+				F002 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		GMOD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F003 /* Recording.swift */,
+				F004 /* RecordingState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		GSVC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F005 /* RecordingManager.swift */,
+				F006 /* MicrophoneCaptureService.swift */,
+				F007 /* SystemAudioCaptureService.swift */,
+				F008 /* AudioMixerService.swift */,
+				F009 /* RecordingLibraryStore.swift */,
+				F010 /* PermissionsManager.swift */,
+				F011 /* SettingsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		GVIW /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F012 /* ContentView.swift */,
+				F013 /* RecordingListView.swift */,
+				F014 /* RecordingDetailView.swift */,
+				F015 /* RecordingControlsView.swift */,
+				F016 /* PermissionsView.swift */,
+				F017 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		GUTL /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F018 /* FileNaming.swift */,
+				F019 /* Logger.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		GRES /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FPLIST /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		GTST /* DayRecorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F020 /* DayRecorderTests.swift */,
+			);
+			path = DayRecorderTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TAPP /* DayRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCAPP /* Build configuration list for PBXNativeTarget "DayRecorder" */;
+			buildPhases = (
+				BPSRC /* Sources */,
+				BPFR /* Frameworks */,
+				BPRES /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DayRecorder;
+			productName = DayRecorder;
+			productReference = FAPP /* DayRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		TTST /* DayRecorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCTST /* Build configuration list for PBXNativeTarget "DayRecorderTests" */;
+			buildPhases = (
+				BPTSRC /* Sources (Tests) */,
+				BPFT /* Frameworks (Tests) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				TDEP /* PBXTargetDependency */,
+			);
+			name = DayRecorderTests;
+			productName = DayRecorderTests;
+			productReference = FTST /* DayRecorderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					TAPP = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					TTST = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = TAPP;
+					};
+				};
+			};
+			buildConfigurationList = BCPROJ /* Build configuration list for PBXProject "DayRecorder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GROOT;
+			productRefGroup = GPRD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TAPP /* DayRecorder */,
+				TTST /* DayRecorderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BPRES /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BPSRC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A001 /* DayRecorderApp.swift in Sources */,
+				A002 /* AppDelegate.swift in Sources */,
+				A003 /* Recording.swift in Sources */,
+				A004 /* RecordingState.swift in Sources */,
+				A005 /* RecordingManager.swift in Sources */,
+				A006 /* MicrophoneCaptureService.swift in Sources */,
+				A007 /* SystemAudioCaptureService.swift in Sources */,
+				A008 /* AudioMixerService.swift in Sources */,
+				A009 /* RecordingLibraryStore.swift in Sources */,
+				A010 /* PermissionsManager.swift in Sources */,
+				A011 /* SettingsStore.swift in Sources */,
+				A012 /* ContentView.swift in Sources */,
+				A013 /* RecordingListView.swift in Sources */,
+				A014 /* RecordingDetailView.swift in Sources */,
+				A015 /* RecordingControlsView.swift in Sources */,
+				A016 /* PermissionsView.swift in Sources */,
+				A017 /* SettingsView.swift in Sources */,
+				A018 /* FileNaming.swift in Sources */,
+				A019 /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BPTSRC /* Sources (Tests) */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A020 /* DayRecorderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		TDEP /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = TAPP /* DayRecorder */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BCDBG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCREL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BCAPPDBG /* Debug (App) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DayRecorder/DayRecorder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DayRecorder/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dayrecorder.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		BCAPPREL /* Release (App) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DayRecorder/DayRecorder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DayRecorder/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dayrecorder.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		BCTDBG /* Debug (Tests) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dayrecorder.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DayRecorder.app/Contents/MacOS/DayRecorder";
+			};
+			name = Debug;
+		};
+		BCTREL /* Release (Tests) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dayrecorder.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DayRecorder.app/Contents/MacOS/DayRecorder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCPROJ /* Build configuration list for PBXProject "DayRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCDBG /* Debug */,
+				BCREL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCAPP /* Build configuration list for PBXNativeTarget "DayRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCAPPDBG /* Debug (App) */,
+				BCAPPREL /* Release (App) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCTST /* Build configuration list for PBXNativeTarget "DayRecorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCTDBG /* Debug (Tests) */,
+				BCTREL /* Release (Tests) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = PROJ /* Project object */;
+}
