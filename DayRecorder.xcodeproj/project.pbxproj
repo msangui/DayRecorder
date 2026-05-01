@@ -14,6 +14,7 @@
 		A005 /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005 /* RecordingManager.swift */; };
 		A006 /* MicrophoneCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F006 /* MicrophoneCaptureService.swift */; };
 		A007 /* SystemAudioCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007 /* SystemAudioCaptureService.swift */; };
+		A023 /* MicrophoneActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F023 /* MicrophoneActivityService.swift */; };
 		A008 /* AudioMixerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008 /* AudioMixerService.swift */; };
 		A009 /* RecordingLibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F009 /* RecordingLibraryStore.swift */; };
 		A010 /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010 /* PermissionsManager.swift */; };
@@ -39,6 +40,7 @@
 		F005 /* RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingManager.swift; sourceTree = "<group>"; };
 		F006 /* MicrophoneCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneCaptureService.swift; sourceTree = "<group>"; };
 		F007 /* SystemAudioCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAudioCaptureService.swift; sourceTree = "<group>"; };
+		F023 /* MicrophoneActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneActivityService.swift; sourceTree = "<group>"; };
 		F008 /* AudioMixerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMixerService.swift; sourceTree = "<group>"; };
 		F009 /* RecordingLibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingLibraryStore.swift; sourceTree = "<group>"; };
 		F010 /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				F005 /* RecordingManager.swift */,
 				F006 /* MicrophoneCaptureService.swift */,
 				F007 /* SystemAudioCaptureService.swift */,
+				F023 /* MicrophoneActivityService.swift */,
 				F008 /* AudioMixerService.swift */,
 				F009 /* RecordingLibraryStore.swift */,
 				F010 /* PermissionsManager.swift */,
@@ -289,6 +292,7 @@
 				A005 /* RecordingManager.swift in Sources */,
 				A006 /* MicrophoneCaptureService.swift in Sources */,
 				A007 /* SystemAudioCaptureService.swift in Sources */,
+				A023 /* MicrophoneActivityService.swift in Sources */,
 				A008 /* AudioMixerService.swift in Sources */,
 				A009 /* RecordingLibraryStore.swift in Sources */,
 				A010 /* PermissionsManager.swift in Sources */,
