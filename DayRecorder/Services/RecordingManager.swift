@@ -1,6 +1,7 @@
 import Foundation
 import AVFoundation
 import Combine
+import CoreAudio
 
 @MainActor
 final class RecordingManager: ObservableObject {
@@ -16,17 +17,44 @@ final class RecordingManager: ObservableObject {
     private let mixer = AudioMixerService()
     private let library = RecordingLibraryStore.shared
     private let settings = SettingsStore.shared
+    private let micActivity = MicrophoneActivityService.shared
 
     private var sysAudio: AnyObject? = nil   // SystemAudioCaptureService (macOS 13+)
 
     private var timer: Timer?
     private var currentRecordingID: UUID?
     private var autoSplitTimer: Timer?
+    private var cancellables = Set<AnyCancellable>()
 
     private init() {
         if #available(macOS 13.0, *) {
             sysAudio = SystemAudioCaptureService()
         }
+        setupMeetingDetection()
+    }
+
+    private func setupMeetingDetection() {
+        settings.$autoDetectMeetings
+            .receive(on: RunLoop.main)
+            .sink { [weak self] enabled in
+                guard let self else { return }
+                enabled ? self.micActivity.startMonitoring() : self.micActivity.stopMonitoring()
+            }
+            .store(in: &cancellables)
+
+        // Only the rising edge (false → true) triggers a recording; once we're
+        // recording we hold the mic ourselves so this won't fire again until we stop.
+        micActivity.$isMicrophoneActive
+            .receive(on: RunLoop.main)
+            .removeDuplicates()
+            .filter { $0 }
+            .sink { [weak self] _ in
+                guard let self,
+                      self.settings.autoDetectMeetings,
+                      self.status == .idle else { return }
+                Task { @MainActor [weak self] in await self?.startRecording() }
+            }
+            .store(in: &cancellables)
     }
 
     func startRecording() async {

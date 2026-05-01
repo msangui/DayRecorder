@@ -27,6 +27,10 @@ struct SettingsView: View {
 
             Section("Startup") {
                 Toggle("Start recording automatically on launch", isOn: $settings.autoStartOnLaunch)
+                Toggle("Auto-record when microphone becomes active", isOn: $settings.autoDetectMeetings)
+                Text("Starts a recording whenever any app activates the microphone (meetings, calls, etc.). Stop manually or via auto-split.")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
             }
 
             Section("Permissions") {

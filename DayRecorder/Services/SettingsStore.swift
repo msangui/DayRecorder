@@ -18,6 +18,10 @@ final class SettingsStore: ObservableObject {
         didSet { save() }
     }
 
+    @Published var autoDetectMeetings: Bool {
+        didSet { save() }
+    }
+
     private static var defaultOutputDirectory: URL {
         let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return docs.appendingPathComponent("DayRecorder")
@@ -44,6 +48,7 @@ final class SettingsStore: ObservableObject {
         let splitRaw = defaults.integer(forKey: "autoSplitInterval")
         autoSplitInterval = AutoSplitInterval(rawValue: splitRaw) ?? .off
         autoStartOnLaunch = defaults.bool(forKey: "autoStartOnLaunch")
+        autoDetectMeetings = defaults.bool(forKey: "autoDetectMeetings")
 
         ensureOutputDirectoryExists()
     }
@@ -66,5 +71,6 @@ final class SettingsStore: ObservableObject {
     private func save() {
         defaults.set(autoSplitInterval.rawValue, forKey: "autoSplitInterval")
         defaults.set(autoStartOnLaunch, forKey: "autoStartOnLaunch")
+        defaults.set(autoDetectMeetings, forKey: "autoDetectMeetings")
     }
 }
